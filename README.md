@@ -1,7 +1,7 @@
 # Python Calculator App
 
 ### Install the required libraries
-    pip install customtkinter
+    pip install customtkinter==5.2.2
     pip install pygame
     
 
@@ -12,5 +12,4 @@
 - Standard arithmetic operations: addition, subtraction, multiplication, division.
 
 
-
-![Screenshot 2024-02-05 190333](https://github.com/Thisal-D/Standard-Calculator/assets/93121062/7bcef840-d24f-4213-9d3b-13947ae8b659)
+![Untitled-1](https://github.com/Thisal-D/Standard-Calculator/assets/93121062/37c407a0-679e-4cb9-a1f0-c35b275c208f)
