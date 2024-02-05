@@ -169,7 +169,7 @@ def calculate():
 #buttons
 bt_frame = ctk.CTkFrame(root , fg_color="#000000")
 bt_frame.place(relwidth=1 ,y=80 ,x=5 ,relheight=1)
-c_bt = ctk.CTkButton(bt_frame ,text="C",font=('arial',11,'bold') ,border_width=2 ,border_color="#707070" ,
+c_bt = ctk.CTkButton(bt_frame ,text="C",font=('arial',15,'bold') ,border_width=2 ,border_color="#707070" ,
                 fg_color="#202020" ,text_color="#cccccc" ,hover_color="#303030" ,
                 command=clrscr ,width=80 ,height=80)
 c_bt.grid(row=1 ,column=1,pady=2 ,padx=2)
@@ -181,7 +181,7 @@ for i in range(10):
     if column_> 3:
         column_ = 1
         row_ += 1
-    globals()['bt_no'+str(i)] = ctk.CTkButton(bt_frame ,text=nums[i] ,font=('arial',14,'bold') 
+    globals()['bt_no'+str(i)] = ctk.CTkButton(bt_frame ,text=nums[i] ,font=('arial',20,'bold') 
                                             ,border_width=2 ,border_color="#707070" ,
                                             command = lambda x =  nums[i] : display(x) ,
                                             width=80 ,height=80 ,
@@ -190,7 +190,7 @@ for i in range(10):
     column_ += 1
 
 
-float_bt =  ctk.CTkButton(bt_frame ,text="." ,font=('arial',14,'bold') 
+float_bt =  ctk.CTkButton(bt_frame ,text="." ,font=('arial',20,'bold') 
                                         ,border_width=2 ,border_color="#707070" ,
                                         command = lambda x =  "." : display(x) ,
                                         width=80 ,height=80 ,
@@ -202,7 +202,7 @@ column_ = 4
 row_ = 1
 maths = [" / " , " x " ," - " ," + " ]
 for i in maths :
-    globals()['maths'+str(i)]  = ctk.CTkButton(bt_frame ,text=i ,font=('arial',13,'bold') 
+    globals()['maths'+str(i)]  = ctk.CTkButton(bt_frame ,text=i ,font=('arial',17,'bold') 
                                         ,border_width=2 ,border_color="#707070" ,
                                         command = lambda x =  i : display(x) ,
                                         width=80 ,height=80 ,
@@ -212,7 +212,7 @@ for i in maths :
 
 
 
-cal_bt = ctk.CTkButton(bt_frame ,text="=",font=('arial',11,'bold') ,border_width=2 ,border_color="#707070" ,
+cal_bt = ctk.CTkButton(bt_frame ,text="=",font=('arial',14,'bold') ,border_width=2 ,border_color="#707070" ,
                 command=calculate,width=80 ,height=80 ,fg_color="#202020" ,text_color="#cccccc" ,hover_color="#171725")
 cal_bt.grid(row=5 ,column=4,pady=2 ,padx=2)
 
@@ -220,11 +220,11 @@ rem_bt = ctk.CTkButton(bt_frame ,text="<<<",font=('arial',11,'bold') ,border_wid
                 command=remove , width=80 ,height=80 ,fg_color="#202020" ,text_color="#cccccc" ,hover_color="#303030")
 rem_bt.grid(row=1 ,column=2,pady=2 ,padx=2)
 
-con_float = ctk.CTkButton(bt_frame ,text="float",font=('arial',11,'bold') ,border_width=2 ,border_color="#707070" ,
+con_float = ctk.CTkButton(bt_frame ,text="float",font=('arial',14,'bold') ,border_width=2 ,border_color="#707070" ,
                 command=lambda x = float :convert(x),width=80 ,height=80 ,
                 fg_color="#202020" ,text_color="#ff0000" ,hover_color="#201717" ,)
 con_float.grid(row=5 ,column=2,pady=2 ,padx=2)
-con_int = ctk.CTkButton(bt_frame ,text="int",font=('arial',11,'bold') ,border_width=2 ,border_color="#707070" ,
+con_int = ctk.CTkButton(bt_frame ,text="int",font=('arial',14,'bold') ,border_width=2 ,border_color="#707070" ,
                 command=lambda x = int :convert(x),width=80 ,height=80,
                 fg_color="#202020" ,text_color="#ff0000" ,hover_color="#201717" ,)
 con_int.grid(row=5 ,column=3,pady=2 ,padx=2)
