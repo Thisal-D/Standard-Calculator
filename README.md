@@ -9,5 +9,6 @@
 
 ## Features
 - Standard arithmetic operations: addition, subtraction, multiplication, division.
+ 
 
-![Untitled-1](https://github.com/Thisal-D/Standard-Calculator/assets/93121062/8d2c4dc2-3a8e-42f4-9bf4-67a2978bf06f)
+![Untitled-1_072004](https://github.com/Thisal-D/Standard-Calculator/assets/93121062/61969d07-48d0-4be5-8371-97fd8d44ff66)
